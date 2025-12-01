@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fair Beauty</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fafafa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff69b4;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    height: 70vh;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn {
+    padding: 10px 25px;
+    background: #fff;
+    color: #ff69b4;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+.section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.service-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #ff69b4;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Contact */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #ff69b4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ececec;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Fair Beauty</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Glow With Confidence</h2>
+    <p>Your skin deserves love, not compromise.</p>
+    <a href="#services" class="btn">Explore Services</a>
+</div>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <div class="card">
+            <h3>Skin Care</h3>
+            <p>Natural & safe skin care products for glowing skin.</p>
+        </div>
+
+        <div class="card">
+            <h3>Beauty Products</h3>
+            <p>Premium beauty essentials delivered with trust.</p>
+        </div>
+
+        <div class="card">
+            <h3>Relaxing Massage</h3>
+            <p>Rejuvenate your mind and body with calming therapy.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <img src="https://plus.unsplash.com/premium_photo-1682096423780-41ca1b04af68?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <textarea rows="5" placeholder="Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+<footer>
+    ©️ 2025 Fair Beauty | All Rights Reserved
+</footer>
+
+</body>
+</html>
